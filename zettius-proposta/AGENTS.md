@@ -1,9 +1,15 @@
 # Agente de IA — Proposta Comercial Zettius
 
-Leia este arquivo antes de qualquer alteração. Você é o agente de desenvolvimento de uma página de proposta comercial audiovisual.
+Leia este arquivo antes de qualquer alteração. Este projeto é uma página de proposta comercial audiovisual de Caio Lima para a Zettius.
 
-## Objetivo
-Manter uma página elegante, responsiva e clara, com serviços, preços, prazos e simulador de orçamento. Todo o conteúdo deve estar em português brasileiro.
+## Direção de marca e interface
+- A marca pessoal deve aparecer como **Caio Lima**, com iniciais maiúsculas. Não substituir por Zettius nem criar um símbolo ou slogan novo.
+- O cliente da proposta é **Zettius**. Usar expressões funcionais como “Proposta Comercial”, “Zettius”, “Serviços” e “Audiovisual”.
+- Não inserir slogans, frases-manifesto, textos de posicionamento pessoal ou frases prontas da marca Caio Lima.
+- Identidade visual: preto como base; verde muito escuro e discreto para profundidade; laranja queimado somente como microacento; superfícies com sensação de vidro fosco/canelado e textura sutil; composição editorial, fotográfica e tátil; tipografia grotesca/expressiva com hierarquia precisa.
+- Não usar blocos brancos chapados, cores vibrantes em excesso, gradientes verdes evidentes, estética genérica de agência ou elementos decorativos sem função.
+- Não há simulador de orçamento. Não adicionar calculadora ou interação de estimativa sem solicitação explícita.
+- Interface e conteúdo em português brasileiro, responsivos e acessíveis.
 
 ## Valores e escopo: não alterar sem autorização explícita
 
@@ -35,17 +41,8 @@ Manter uma página elegante, responsiva e clara, com serviços, preços, prazos 
 - Vídeos seguintes: até 3 dias antes da data de publicação, conforme cronograma combinado.
 - Prazos dependem do recebimento dos materiais e informações necessários.
 
-## Regras do simulador
-- Captação = quantidade × R$ 500.
-- Edição simples = quantidade × R$ 100.
-- Edição intermediária institucional/documentário = quantidade × R$ 250.
-- Aftermovie = quantidade × R$ 250, sem urgência.
-- Adicional de 50% só pode incidir sobre edição simples e intermediária institucional/documentário marcadas como urgentes.
-- Mostrar subtotais e total em reais.
-- Deixar claro que o resultado é uma estimativa, não confirmação de contratação.
-
 ## Não inventar condições ainda não definidas
 Pagamento, número de revisões, deslocamento, hora extra, validade da proposta, licenciamento das trilhas e prazo de disponibilidade dos links dos arquivos brutos ainda não foram definidos. Pergunte antes de apresentar qualquer um como regra.
 
-## Direção de interface
-Visual profissional, contemporâneo e editorial. Boa hierarquia, bastante respiro, contraste alto e responsividade. Não inventar depoimentos, cases, métricas, logos, clientes ou promessas. Não remover funcionalidades sem explicar. Ao concluir alterações, diga o que mudou e como testar.
+## Regras de conteúdo
+Não inventar depoimentos, cases, métricas, logos, clientes ou promessas. Manter preços, escopo e prazos exatamente como definidos. Ao concluir alterações, explicar o que mudou e como conferir o resultado.

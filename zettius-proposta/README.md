@@ -1,42 +1,21 @@
-# Proposta Comercial Zettius
+# Proposta Comercial — Caio Lima × Zettius
 
-Projeto inicial de uma página de proposta comercial audiovisual, com preços, escopo, prazos e simulador.
+Página responsiva de proposta comercial para serviços de captação e pós-produção audiovisual.
 
-## Publicar no GitHub sem instalar programas
+## Identidade visual
+A interface utiliza a identidade de Caio Lima: base preta, profundidade em verde muito escuro, microacento laranja queimado, texturas discretas e elementos inspirados em vidro fosco. A marca aparece como assinatura tipográfica “Caio Lima”. Não há slogan nem simulador de orçamento.
 
+## Publicar no GitHub
 1. Acesse https://github.com e entre na sua conta.
-2. Clique em **New** para criar um repositório.
-3. Nomeie como `zettius-proposta-comercial`.
-4. Escolha Public ou Private. Não marque para criar README.
-5. Clique em **Create repository**.
-6. Escolha **uploading an existing file**.
-7. Descompacte o ZIP deste projeto no computador.
-8. Arraste o conteúdo de dentro da pasta `zettius-proposta` para a área de upload do GitHub. Não envie o ZIP fechado.
-9. Confira que `AGENTS.md`, `package.json`, `README.md` e a pasta `app` aparecem na raiz.
-10. Escreva uma mensagem como `Adiciona projeto inicial` e clique em **Commit changes**.
+2. Abra o repositório do projeto.
+3. Envie os arquivos atualizados, substituindo os anteriores. Preserve a estrutura: `AGENTS.md`, `README.md`, `package.json` e a pasta `app` na raiz.
+4. Clique em **Commit changes**.
 
 ## Publicar na Vercel
+Se o repositório já estiver conectado à Vercel, cada novo commit no GitHub dispara uma nova publicação automaticamente. Acesse o projeto na Vercel e acompanhe a aba **Deployments**.
 
-1. Acesse https://vercel.com e entre/crie uma conta.
-2. Escolha **Continue with GitHub** e autorize a conexão.
-3. No painel, clique em **Add New...** > **Project**.
-4. Importe o repositório `zettius-proposta-comercial`.
-5. A Vercel deve detectar Next.js automaticamente. Mantenha as configurações padrão.
-6. Clique em **Deploy**. Ao terminar, ela mostrará o endereço público do site.
+## Desenvolvimento local (opcional)
+Com Node.js LTS instalado, execute `npm install` e depois `npm run dev`. Abra http://localhost:3000.
 
-Quando você enviar novas alterações para o GitHub, a Vercel publicará a nova versão automaticamente.
-
-## Como usar uma IA para continuar o desenvolvimento
-
-Conecte o repositório a uma ferramenta de programação com IA que aceite GitHub. Peça:
-
-> Antes de editar, leia o AGENTS.md. Quero melhorar este site sem alterar preços, prazos ou regras comerciais. Explique as mudanças em linguagem simples e me diga como conferir o resultado.
-
-O `AGENTS.md` é um arquivo de instruções para orientar a IA. Ele não é o agente em si, nem publica o site sozinho.
-
-## Rodar localmente (opcional)
-
-Instale Node.js LTS em https://nodejs.org. No terminal, dentro da pasta, rode `npm install` e depois `npm run dev`. Abra http://localhost:3000.
-
-## Decisões comerciais pendentes
-Antes de enviar a proposta final, defina pagamento, revisões, deslocamento, hora extra, validade, licenciamento das trilhas e prazo de disponibilidade dos links dos arquivos brutos.
+## Informações comerciais
+Consulte `AGENTS.md` antes de editar preços, escopo, prazos ou regras de urgência. Não inventar condições comerciais que ainda não foram definidas.
