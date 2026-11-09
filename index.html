@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposta comercial · Zettius</title>
+<meta name="description" content="Proposta comercial da Zettius: captação e edição de vídeo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF0F4; --ink:#12151C; --muted:#5A6070; --line:#CDD1DB;
+  --panel:#FFFFFF; --accent:#3330E8; --accent-ink:#FFFFFF; --soft:#DDDFF8;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"DM Sans","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0F1117; --ink:#ECEEF4; --muted:#9AA0B2; --line:#2A2E3B; --panel:#171A23; --accent:#8A88FF; --accent-ink:#0F1117; --soft:#232552;}
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem}
+section{padding:4.5rem 0 0}
+h1,h2,h3{font-family:var(--display);line-height:1.05;letter-spacing:-.02em}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:800;margin-bottom:.5rem}
+h3{font-size:1.5rem;font-weight:700}
+.lede{color:var(--muted);max-width:56ch;margin-bottom:2rem}
+.small{font-size:.9rem;color:var(--muted)}
+
+/* hero */
+.hero{padding:4rem 0 0}
+.hero .brand{font:800 1.1rem var(--display);letter-spacing:-.01em;display:flex;align-items:center;gap:.5rem}
+.hero .brand i{width:.9rem;height:.9rem;background:var(--accent);display:inline-block;transform:rotate(45deg)}
+.hero h1{font-size:clamp(3.2rem,12vw,8.5rem);font-weight:800;letter-spacing:-.045em;margin:3rem 0 1.5rem}
+.hero p{max-width:50ch;color:var(--muted);font-size:1.15rem}
+.meta{display:flex;flex-wrap:wrap;gap:2.5rem;margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid var(--line)}
+.meta div{display:flex;flex-direction:column}
+.meta span{font-size:.85rem;color:var(--muted)}
+.meta strong{font-weight:500}
+
+/* cards */
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:2rem}
+.price{font:800 clamp(2.6rem,6vw,3.6rem)/1 var(--display);letter-spacing:-.03em}
+.price small{font:500 1rem var(--body);color:var(--muted);letter-spacing:0;margin-left:.35rem}
+ul.check{list-style:none;padding:0;margin:1.25rem 0 0}
+ul.check li{padding:.55rem 0 .55rem 1.6rem;border-top:1px solid var(--line);position:relative}
+ul.check li::before{content:"";position:absolute;left:.1rem;top:1.05rem;width:.55rem;height:.55rem;background:var(--accent);border-radius:50%}
+.note{margin-top:1.25rem;padding:.9rem 1rem;background:var(--soft);border-radius:4px;font-size:.95rem}
+
+/* captação */
+.capture{display:grid;grid-template-columns:1.1fr 1fr;gap:2rem;align-items:start}
+.capture .card{border-left:6px solid var(--accent)}
+
+/* edição */
+.edit{display:grid;grid-template-columns:1fr 1fr 0.9fr;gap:1.25rem;align-items:start}
+.edit .tag{display:inline-block;font-size:.9rem;font-weight:500;color:var(--accent);margin:.5rem 0 1rem}
+.edit .price{margin:1.25rem 0 .25rem}
+.side{display:flex;flex-direction:column;gap:1.25rem}
+.side .card{padding:1.5rem;background:transparent;border-style:dashed}
+.side h3{font-size:1.2rem;margin-bottom:.5rem}
+.side p+p{margin-top:.5rem}
+.side .big{font:800 2rem var(--display);color:var(--accent)}
+.example{font-size:.9rem;color:var(--muted);margin-top:.5rem}
+
+/* combinados */
+.terms{display:grid;grid-template-columns:repeat(2,1fr);gap:0 3rem}
+.terms div{padding:1.25rem 0;border-top:1px solid var(--line)}
+.terms h3{font-size:1.15rem;margin-bottom:.35rem}
+.terms p{color:var(--muted);font-size:1rem}
+
+/* cta */
+.cta{margin-top:5rem;padding:3.5rem 0 4rem;border-top:1px solid var(--line)}
+.cta h2{font-size:clamp(2rem,5vw,3.4rem);max-width:18ch}
+.btn{display:inline-block;margin-top:1.5rem;padding:1rem 1.75rem;background:var(--accent);color:var(--accent-ink);font-weight:700;text-decoration:none;border-radius:4px}
+.btn:hover{filter:brightness(1.1)}
+footer{padding-bottom:2.5rem}
+
+@media (max-width:900px){
+  .edit{grid-template-columns:1fr 1fr}
+  .side{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}
+}
+@media (max-width:700px){
+  section{padding-top:3.5rem}
+  .capture,.edit,.terms,.side{grid-template-columns:1fr}
+  .card{padding:1.5rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header class="hero">
+    <div class="brand"><i></i> Zettius</div>
+    <h1>Proposta comercial</h1>
+    <p>Captação e edição de vídeo com valores claros, prazos definidos e o que está incluso em cada etapa.</p>
+    <div class="meta">
+      <div><span>Preparada para</span><strong>[Nome do cliente]</strong></div>
+      <div><span>Data</span><strong>[dd/mm/aaaa]</strong></div>
+      <div><span>Validade</span><strong>15 dias</strong></div>
+    </div>
+  </header>
+
+  <section id="captacao">
+    <h2>Captação</h2>
+    <p class="lede">A gravação é cobrada por meia diária, com equipe e equipamento no set.</p>
+    <div class="capture">
+      <div class="card">
+        <h3>Meia diária (5h)</h3>
+        <div class="price" style="margin-top:1rem">R$ 500</div>
+        <ul class="check">
+          <li>Captação com câmera</li>
+          <li>Direção</li>
+          <li>Iluminação e microfone</li>
+          <li>Arquivos brutos disponíveis em 24h</li>
+        </ul>
+      </div>
+      <div>
+        <div class="card" style="border-left:1px solid var(--line)">
+          <h3>Drone</h3>
+          <p style="margin-top:.5rem">Disponível como adicional, com valor combinado antes da gravação.</p>
+        </div>
+        <p class="note">Precisando de mais tempo no set, a hora extra também é combinada antes. Nada é adicionado sem o seu ok.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="edicao">
+    <h2>Edição</h2>
+    <p class="lede">Valor por vídeo de até 3 minutos, exportado em Full HD ou 4K.</p>
+    <div class="edit">
+
+      <article class="card">
+        <h3>Edição Simples</h3>
+        <span class="tag">Talking head, processos, manifesto, comercial</span>
+        <ul class="check">
+          <li>Trilha</li>
+          <li>Insert</li>
+          <li>Sound design simples</li>
+          <li>Cor simples</li>
+          <li>Lettering e legendas</li>
+          <li>Exportação Full HD ou 4K até 3 min</li>
+        </ul>
+        <div class="price">R$ 100<small>por vídeo</small></div>
+      </article>
+
+      <article class="card">
+        <h3>Edição Intermediária</h3>
+        <span class="tag">Institucional, documentário, aftermovie</span>
+        <ul class="check">
+          <li>Trilha</li>
+          <li>Insert</li>
+          <li>Sound design avançado</li>
+          <li>Cor avançada</li>
+          <li>Lettering e legendas</li>
+          <li>Exportação Full HD ou 4K até 3 min</li>
+        </ul>
+        <div class="price">R$ 250<small>por vídeo</small></div>
+      </article>
+
+      <aside class="side" aria-label="Urgência e prazos">
+        <div class="card">
+          <h3>Taxa de urgência</h3>
+          <p class="big">+50%</p>
+          <p>Sobre o valor da edição, para entrega em 24h ou 48h. Não se aplica a aftermovie.</p>
+          <p class="example">Exemplo: edição simples urgente = R$ 150.</p>
+        </div>
+        <div class="card">
+          <h3>Prazos de entrega</h3>
+          <p><strong>Primeiro vídeo do lote:</strong> até 5 dias úteis após a gravação.</p>
+          <p><strong>Vídeos seguintes:</strong> entregues até 3 dias antes da data de publicação.</p>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section id="combinados">
+    <h2>Combinados</h2>
+    <p class="lede">Regras simples para os dois lados saberem o que esperar.</p>
+    <div class="terms">
+      <div>
+        <h3>Ajustes inclusos</h3>
+        <p>Cada vídeo tem 2 rodadas de ajustes sem custo. Alterações além disso são combinadas antes de começar.</p>
+      </div>
+      <div>
+        <h3>Sem surpresas no valor</h3>
+        <p>Drone, hora extra, deslocamento e urgência só entram na conta com a sua aprovação prévia.</p>
+      </div>
+      <div>
+        <h3>Atraso por minha parte</h3>
+        <p>Se eu não cumprir um prazo combinado, o vídeo atrasado recebe 10% de desconto.</p>
+      </div>
+      <div>
+        <h3>Prazos dependem de material</h3>
+        <p>Os prazos contam a partir do recebimento do briefing, roteiro e aprovações necessárias. Atrasos na aprovação movem a entrega na mesma medida.</p>
+      </div>
+      <div>
+        <h3>Reagendamento</h3>
+        <p>Remarcar a gravação com 48h de antecedência não tem custo. Cancelamentos de última hora cobrem apenas despesas já feitas.</p>
+      </div>
+      <div>
+        <h3>Vídeos acima de 3 minutos</h3>
+        <p>Têm orçamento próprio, informado antes de a edição começar.</p>
+      </div>
+      <div>
+        <h3>Arquivos e backup</h3>
+        <p>Os brutos ficam guardados por 30 dias após a entrega final, para o caso de você precisar de algo de novo.</p>
+      </div>
+      <div>
+        <h3>Uso do material</h3>
+        <p>Os vídeos são seus para uso comercial. Posso incluir trechos no meu portfólio, a menos que você peça sigilo.</p>
+      </div>
+      <div>
+        <h3>Pagamento</h3>
+        <p>50% para reservar a data de gravação e 50% na entrega. Forma de pagamento: Pix.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>Vamos fechar a data da gravação?</h2>
+    <p class="lede" style="margin-top:.75rem">Me chame para ajustar o escopo ao seu projeto e reservar a agenda.</p>
+    <a class="btn" href="https://wa.me/5511999999999?text=Oi!%20Vi%20a%20proposta%20da%20Zettius%20e%20quero%20conversar.">Chamar no WhatsApp</a>
+  </div>
+
+  <footer class="small">Zettius · [seu e-mail] · [@seuinstagram]</footer>
+</main>
+</body>
+</html>
